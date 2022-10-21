@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+html,
+body {
+    min-height: 100%;
+    font-family: 'Kanit', sans-serif;
+    height: 3000px;
+    background: linear-gradient(141deg, #fd78da 0%, #49e3f4 51%, #e8cc2c 75%);
+}
+/* --- NAVBAR --- */
+.navbar {
+    background-color: #e8cc2c;
+    width: 150px;
+    position: fixed;
+    margin-left: 75px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #fd78da;
+}
+
+/* --- TRIANGLE --- */
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 150px solid #9378fd;
+}
+
+/* --- ABOUT --- */
+#about {
+    text-align: center;
+}
+
+#about,
+#contact {
+    background-color: #9378fd;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bio,
+.education,
+.work-exp {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+}
+
+
+/* --- WINDOW --- */
+window {
+    font-family: HelveticaNeue, 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+}
+
+span {
+    line-height: 9px;
+    vertical-align: 50%;
+}
+
+.window {
+    background: #fff;
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    margin-top: 12.5vh;
+    border: 1px solid #acacac;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px #acacac;
+}
+
+.titlebar {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ebebeb, color-stop(1.0, #d5d5d5)));
+    background: -webkit-linear-gradient(top, #ebebeb, #d5d5d5);
+    background: -moz-linear-gradient(top, #ebebeb, #d5d5d5);
+    background: -ms-linear-gradient(top, #ebebeb, #d5d5d5);
+    background: -o-linear-gradient(top, #ebebeb, #d5d5d5);
+    background: linear-gradient(top, #ebebeb, #d5d5d5);
+    color: #4d494d;
+    font-size: 11pt;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    border-top: 1px solid #f3f1f3;
+    border-bottom: 1px solid #b1aeb1;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    cursor: default;
+}
+
+.buttons {
+    padding-left: 8px;
+    padding-top: 3px;
+    float: left;
+    line-height: 0px;
+}
+
+.buttons:hover a {
+    visibility: visible;
+}
+
+.close {
+    background: #ff5c5c;
+    font-size: 9pt;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #e33e41;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.close:active {
+    background: #c14645;
+    border: 1px solid #b03537;
+}
+
+.close:active .closebutton {
+    color: #4e0002;
+}
+
+.closebutton {
+    color: #820005;
+    visibility: hidden;
+    cursor: default;
+}
+
+.minimize {
+    background: #ffbd4c;
+    font-size: 9pt;
+    line-height: 11px;
+    margin-left: 4px;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #e09e3e;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.minimize:active {
+    background: #c08e38;
+    border: 1px solid #af7c33;
+}
+
+.minimize:active .minimizebutton {
+    color: #5a2607;
+}
+
+.minimizebutton {
+    color: #9a5518;
+    visibility: hidden;
+    cursor: default;
+}
+
+.zoom {
+    background: #00ca56;
+    font-size: 9pt;
+    line-height: 11px;
+    margin-left: 6px;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #14ae46;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.zoom:active {
+    background: #029740;
+    border: 1px solid #128435;
+}
+
+.zoom:active .zoombutton {
+    color: #003107;
+}
+
+.zoombutton {
+    color: #006519;
+    visibility: hidden;
+    cursor: default;
+}
+
+.content {
+    padding: 10px;
+}
+
+/* --- PROJECTS ---*/
+.projects {
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-example {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+
+/* container image */
+.container {
+    width: 260px;
+    height: 540px;
+    background: rgba(0, 0, 0, 0);
+    transform: rotate(-30deg) skew(25deg) scale(0.8);
+    transition: 0.5s;
+}
+
+.container img {
+    position: absolute;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.container:hover img:nth-child(4) {
+    transform: translate(160px, -160px);
+    opacity: 1;
+}
+
+.container:hover img:nth-child(3) {
+    transform: translate(120px, -120px);
+    opacity: 0.8;
+}
+
+.container:hover img:nth-child(2) {
+    transform: translate(80px, -80px);
+    opacity: 0.6;
+}
+
+.container:hover img:nth-child(1) {
+    transform: translate(40px, -40px);
+    opacity: 0.4;
+}
+
+/* store project */
+#watchmall-logo {
+    width: 400px;
+    height: 400px;
+}
+.project-example a:hover{
+    transform: scale(0.9);
+    filter:sepia(50);
+}
+
+/* --- CONTACT --- */
+#contact {
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-details {
+    margin-right: 40%;
+    width: 100px;
+    height: 100px;
+}
+
+#myphoto {
+    margin-left: 30%;
+    width: 320px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.fa-5x:hover {
+    transform: scale(1.5);
+}
+
+.social-link {
+    text-decoration: none;
+}
+
+.contact-details a{
+    color: black;
+}
+.contact-details a:hover{
+    color: #fd78da;
+}
